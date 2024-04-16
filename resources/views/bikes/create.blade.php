@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Ajouter un vélo</div>
+                    <div class="card-header">Ajouter un vélo qui tu veux </div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('bikes.store') }}">
