@@ -9,6 +9,7 @@
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ route('login.submit') }}">
                             @csrf
 
                             <div class="form-group row">
@@ -64,6 +65,7 @@
                                     @endif
                                 </div>
                             </div>
+                        </form>
                         </form>
                     </div>
                 </div>

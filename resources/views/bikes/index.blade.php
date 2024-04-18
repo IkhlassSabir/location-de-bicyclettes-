@@ -8,10 +8,7 @@
                     <div class="card-header">Liste des vélos</div>
 
                     <div class="card-body">
-                        <!-- Bouton pour créer un nouveau vélo -->
                         <a href="{{ route('bikes.create') }}" class="btn btn-primary mb-3">Ajouter un vélo</a>
-
-                        <!-- Tableau pour afficher les vélos -->
                         <table class="table">
                             <thead>
                                 <tr>
@@ -21,7 +18,6 @@
                                     <th scope="col">Matériau</th>
                                     <th scope="col">Statut</th>
                                     <th scope="col">Prix par heure</th>
-                                    <!-- Ajoutez d'autres colonnes si nécessaire -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -29,11 +25,10 @@
                                     <tr>
                                         <td>{{ $bike->id }}</td>
                                         <td>{{ $bike->type }}</td>
-                                        <td>{{ $bike->size }}</td>
-                                        <td>{{ $bike->material }}</td>
-                                        <td>{{ $bike->status }}</td>
-                                        <td>{{ $bike->price_per_hour }}</td>
-                                        <!-- Ajoutez d'autres colonnes si nécessaire -->
+                                        <td>{{ $bike->taille }}</td>
+                                        <td>{{ $bike->materiau }}</td>
+                                        <td>{{ $bike->statu }}</td>
+                                        <td>{{ $bike->prix_par_heure }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

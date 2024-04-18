@@ -37,19 +37,65 @@
 </head>
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bike Rental</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">Connexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('bikes.create') }}">Ajouter un vélo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-5">
         <div class="col-md-8">
-            <div class="card mt-5">
+            <div class="card">
                 <div class="card-body">
                     <div class="jumbotron text-center">
                         <h1 class="display-4">Bienvenue sur Location de Bicyclettes</h1>
                         <p class="lead">Découvrez notre gamme de vélos et trouvez celui qui vous convient.</p>
-                        <a href="{{ route('login') }}" class="btn btn-primary">Connexion</a>
-                        <a href="{{ route('bikes.create') }}" class="btn btn-primary">Ajouter un vélo</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Images -->
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <img src="Images/image1.jpg" class="img-fluid" alt="Image1">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image2.jpg" class="img-fluid" alt="Image 2">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image3.jpg" class="img-fluid" alt="Image 3">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image4.jpg" class="img-fluid" alt="Image 4">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image5.jpg" class="img-fluid" alt="Image 5">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image6.jpg" class="img-fluid" alt="Image 6">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image7.jpg" class="img-fluid" alt="Image 7">
+        </div>
+        <div class="col-md-4">
+            <img src="Images/image8.jpg" class="img-fluid" alt="Image 8">
         </div>
     </div>
 </div>

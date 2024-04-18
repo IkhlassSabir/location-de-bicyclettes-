@@ -5,49 +5,31 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Ajouter un vélo qui tu veux </div>
+                    <div class="card-header">Ajouter un vélo</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('bikes.store') }}">
                             @csrf
-
-                            <!-- Champs pour ajouter un nouveau vélo -->
                             <div class="form-group">
                                 <label for="type">Type</label>
-                                <input id="type" type="text" class="form-control" name="type" required autofocus>
+                                <input id="type" type="text" class="form-control" name="type" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="size">Taille</label>
-                                <input id="size" type="text" class="form-control" name="size" required>
+                                <label for="taille">Taille</label>
+                                <input id="taille" type="text" class="form-control" name="taille" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="material">Matériau</label>
-                                <input id="material" type="text" class="form-control" name="material" required>
+                                <label for="materiau">Matériau</label>
+                                <input id="materiau" type="text" class="form-control" name="materiau" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="status">Statut</label>
-                                <input id="status" type="text" class="form-control" name="status" required>
+                                <label for="statu">Statut</label>
+                                <input id="statu" type="text" class="form-control" name="statu" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="price_per_hour">Prix par heure</label>
-                                <input id="price_per_hour" type="text" class="form-control" name="price_per_hour" required>
+                                <label for="prix_par_heure">Prix par heure</label>
+                                <input id="prix_par_heure" type="text" class="form-control" name="prix_par_heure" required>
                             </div>
-
-                            <!-- Sélection d'un vélo existant -->
-                            <div class="form-group">
-                                <label for="existing_bikes">Vélos existants :</label>
-                                <select id="existing_bikes" class="form-control" name="existing_bikes">
-                                    <option value="">Sélectionnez un vélo existant</option>
-                                    @foreach($bikes as $bike)
-                                        <option value="{{ $bike->id }}">{{ $bike->type }} - {{ $bike->size }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Ajouter vélo</button>
                             </div>

@@ -11,20 +11,9 @@ class Bike extends Model
 
     protected $fillable = [
         'type',
-        'size',
-        'status',
-        'price_per_hour',
+        'taille',
+        'materiau',
+        'statu',
+        'prix_par_heure',
     ];
-
-    // Relation avec les locations de vélos
-    public function rentals()
-    {
-        return $this->hasMany(Rental::class);
-    }
-
-    // Relation avec les opérations de maintenance
-    public function maintenances()
-    {
-        return $this->hasMany(Maintenance::class);
-    }
 }
